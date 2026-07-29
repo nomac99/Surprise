@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤️ My Love Surprise ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Music -->
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Fireworks -->
+    <canvas id="fireworks"></canvas>
+
+    <!-- Welcome Screen -->
+    <div id="welcome" class="screen">
+
+        <h1 class="title">
+            ❤️ Welcome My Love ❤️
+        </h1>
+
+        <p class="subtitle">
+            I have a small surprise for you...
+        </p>
+
+        <button class="btn" onclick="startSurprise()">
+            Open Surprise 🎁
+        </button>
+
+    </div>
+
+    <!-- Question 1 -->
+    <div id="question1" class="screen hidden">
+
+        <h1>
+            Do You Love Me? ❤️
+        </h1>
+
+        <div class="button-box">
+
+            <button class="yesBtn"
+                onclick="nextQuestion()">
+                Yes 😍
+            </button>
+
+            <button id="no"
+                class="noBtn"
+                onmouseover="moveButton(this)">
+                No 😜
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Question 2 -->
+    <div id="question2" class="screen hidden">
+
+        <h1>
+            Will You Stay With Me Forever? 💖
+        </h1>
+
+        <div class="button-box">
+
+            <button class="yesBtn"
+                onclick="showSlideshow()">
+                Yes 💍
+            </button>
+
+            <button id="no2"
+                class="noBtn"
+                onmouseover="moveButton(this)">
+                No 😂
+            </button>
+
+        </div>
+
+    </div>
+<!-- Photo Slideshow -->
+    <div id="slideshow" class="screen hidden">
+
+        <h1>📸 Our Beautiful Memories ❤️</h1>
+
+        <img id="photo" src="" alt="Our Photo">
+
+    </div>
+
+    <!-- Final Page -->
+    <div id="finalPage" class="screen hidden">
+
+        <h1 class="typing">
+            ❤️ I Love You Forever ❤️
+        </h1>
+
+        <p class="loveMessage">
+            You are my happiness...<br>
+            You are my smile...<br>
+            You are my world... 🌍❤️<br><br>
+
+            Thank you for being in my life. 💖
+        </p>
+
+        <button class="btn" onclick="restartSurprise()">
+            ❤️ Watch Again ❤️
+        </button>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
